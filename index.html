@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina</title>
+	<link rel="stylesheet" href="estilo.css">
+	<link href="http://fonts.cdnfonts.com/css/kappa&quot" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/audrey" rel="stylesheet">
+</head>
+<body>
+	<h1>PRACTICA DE OPERACIONES DE DOS NUMEROS</h1>
+    <h3>Por Daniela</h3>
+
+    <form name="registro">
+    	<table>
+    		<tr>
+    			<tr><td>Numero:</td>
+    			<td><input type="text" name="dato1" id="dato1"></td>
+    			<tr><td>Numero:</td>
+    			<td><input type="text" name="dato2" id="dato2"></td>
+    		</tr>
+    		<td>OPERACION</td>
+    		<td><input type="button" name="Enviar" value="+" onclick="sumadedatos()">
+	    	<input type="button" name="Enviar" value="-" onclick="restadedatos()">
+	    	<input type="button" name="Enviar" value="x" onclick="multiplicaciondedatos()">
+	    	<input type="button" name="Enviar" value="/" onclick="divisiondedatos()"></td>
+    	</table>
+    	<table>
+    		<tr>
+    			<td><b>RESULTADOS</b></td>
+    			<td><input type="text" name="jin" id="jin"></td>
+    		</tr>
+    	</table>
+    </form>
+    <script type="text/javascript">
+    	function sumadedatos(){
+    		var d1 = document.getElementById("dato1").value;
+    		var d2 = document.getElementById("dato2").value;
+    		var jin = parseInt(d1) + parseInt(d2);
+    		document.getElementById("jin").value = jin; 
+    		}
+    </script>
+    <script type="text/javascript">
+    	function restadedatos(){
+    		var d1 = document.getElementById("dato1").value;
+    		var d2 = document.getElementById("dato2").value;
+    		var jin = parseInt(d1) - parseInt(d2);
+    		document.getElementById("jin").value = jin; 
+    		}
+    </script>
+    <script type="text/javascript">
+    	function multiplicaciondedatos(){
+    		var d1 = document.getElementById("dato1").value;
+    		var d2 = document.getElementById("dato2").value;
+    		var jin = parseInt(d1) * parseInt(d2);
+    		document.getElementById("jin").value = jin; 
+    		}
+    </script>
+    <script type="text/javascript">
+    	function divisiondedatos(){
+    		var d1 = document.getElementById("dato1").value;
+    		var d2 = document.getElementById("dato2").value;
+    		var jin = parseInt(d1) / parseInt(d2);
+    		document.getElementById("jin").value = jin; 
+    		}
+    </script>
+</body>
+</html>
